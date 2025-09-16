@@ -61,4 +61,6 @@ pub fn input_rustics() {
         x = guess,
         y = secret_number
     );
+
+    // TODO: сделать циклы
 }
