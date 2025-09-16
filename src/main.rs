@@ -8,12 +8,5 @@ fn main() {
     // *:: - пространство имен?
 
     input_rustics::input_rustics();
-
-    m();
-}
-
-
-fn m() {
-    print!("ВА");
 }
 
