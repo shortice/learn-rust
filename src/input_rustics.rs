@@ -65,7 +65,7 @@ pub fn input_rustics() {
             Ok(num) => num, // Вернет num
             Err(_) => {
                 println!("Typing a number?");
-                continue
+                continue;
             },
         };
 
