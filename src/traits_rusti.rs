@@ -5,6 +5,10 @@
 пока что такую терминологию вводить.
 */
 
+// TODO: сделать потом более лучше типажи. 
+// Именно с where и `+`
+// Референс: https://doc.rust-lang.ru/book/ch10-02-traits.html
+
 use std::fmt::{Display, Formatter};
 
 // Структура
