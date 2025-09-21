@@ -7,6 +7,7 @@ mod collections;
 mod template_rusti;
 mod traits_rusti;
 mod lifetime_rusti;
+mod use_module_rusti;
 
 // fn - функция
 // main - точка входа в программу
@@ -26,5 +27,7 @@ fn main() {
     template_rusti::test_min();
     traits_rusti::testi();
     lifetime_rusti::the_time();
+
+    use_module_rusti::test();
 }
 
