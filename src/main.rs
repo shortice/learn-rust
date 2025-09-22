@@ -8,6 +8,8 @@ mod template_rusti;
 mod traits_rusti;
 mod lifetime_rusti;
 mod use_module_rusti;
+mod closures_rusti;
+mod iter_rustics;
 
 // fn - функция
 // main - точка входа в программу
@@ -29,5 +31,7 @@ fn main() {
     lifetime_rusti::the_time();
 
     use_module_rusti::test();
+    closures_rusti::test();
+    iter_rustics::test();
 }
 

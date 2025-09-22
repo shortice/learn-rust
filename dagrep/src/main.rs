@@ -18,25 +18,15 @@ pub fn search<'a>(
     contents: &'a str,
     insensitive: bool
 ) -> Vec<&'a str> {
-    let mut results = Vec::new();
-    
-    if insensitive {
-        let query = query.to_lowercase();
-        for line in contents.lines() {
-            if line.to_lowercase().contains(query.as_str()) {
-                results.push(line);
-            }
-        }
-    }
-    else {
-        for line in contents.lines() {
-            if line.contains(query) {
-                results.push(line);
-            }
-        }
-    }
+    let value = if insensitive {
+        query.to_lowercase()
+    } else {
+        query.to_string()
+    };
 
-    results
+    contents.lines().filter(
+        |x| x.to_lowercase().contains(value.as_str())
+    ).collect()
 }
 
 fn main() -> Result<(), String> {
