@@ -1,19 +1,17 @@
 enum Danila {
     Norm,
-    NeNorm
+    NeNorm,
 }
 
 impl Danila {
-    
     fn print(&self) {
         let kavo = match self {
             Danila::NeNorm => "Nafig",
-            Danila::Norm => "Eeeee"
+            Danila::Norm => "Eeeee",
         };
 
         println!("{}", kavo);
     }
-
 }
 
 pub fn enum_rustics() {

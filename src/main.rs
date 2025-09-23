@@ -1,15 +1,16 @@
-mod hello_rustics; // mod как понял импортировать модуль
-mod input_rustics;
-mod struct_rustics;
-mod enum_rustics;
-mod ok_ne_ok_rusti;
+mod closures_rusti;
 mod collections;
+mod enum_rustics;
+mod hello_rustics;
+mod input_rustics;
+mod iter_rustics;
+mod lifetime_rusti;
+mod ok_ne_ok_rusti;
+mod struct_rustics;
 mod template_rusti;
 mod traits_rusti;
-mod lifetime_rusti;
 mod use_module_rusti;
-mod closures_rusti;
-mod iter_rustics;
+// mod как понял импортировать модуль
 
 // fn - функция
 // main - точка входа в программу
@@ -34,4 +35,3 @@ fn main() {
     closures_rusti::test();
     iter_rustics::test();
 }
-

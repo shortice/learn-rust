@@ -16,7 +16,5 @@ fn printer(value: Result<i64, String>) {
 }
 
 pub fn is_okay(value: i64) {
-    printer(
-        ok_ne_ok(value)
-    );
+    printer(ok_ne_ok(value));
 }

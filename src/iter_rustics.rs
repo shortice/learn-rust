@@ -14,9 +14,9 @@ pub fn test() {
     println!("{:?}", m);
     // Разница между iter и into_iter?
     /*
-    А вот в чем. 
+    А вот в чем.
 
-    Смотрим сигнатуры функций. 
+    Смотрим сигнатуры функций.
     У iter &self.
     У into_iter просто self.
 
@@ -26,9 +26,7 @@ pub fn test() {
     И поэтому после into_iter:
     The vector connot used after calling this.
     */
-    let ml: Vec<i32> = m.into_iter().filter(
-        |value| *value > 100
-    ).collect();
+    let ml: Vec<i32> = m.into_iter().filter(|value| *value > 100).collect();
     println!("{:?}", ml);
     // println!("{:?}", m); // <- тут будет ошибка ^^^
 }

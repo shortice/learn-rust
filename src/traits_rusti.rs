@@ -1,11 +1,11 @@
 /*
-Итак... типажи. 
+Итак... типажи.
 
 Мне удобнее будет говорить о них как о интерфейсах, не привычно
 пока что такую терминологию вводить.
 */
 
-// TODO: сделать потом более лучше типажи. 
+// TODO: сделать потом более лучше типажи.
 // Именно с where и `+`
 // Референс: https://doc.rust-lang.ru/book/ch10-02-traits.html
 
@@ -41,23 +41,18 @@ impl Printable for DanilaBadMindset {
 // Сделаем теперь реализации для Display типажа!
 
 impl Display for DanilaGoodMindset {
-
     // Что это тут за кракозябра <'_>?
     // А это время жизни ссылки в Rust...
     // ' - время жизни
     // _ - время жизни определяется компилятором Rust на
     // основе данных, которые у него есть.
-    fn fmt(&self, f: &mut Formatter<'_>) -> Result<
-        (), std::fmt::Error
-    > {
+    fn fmt(&self, f: &mut Formatter<'_>) -> Result<(), std::fmt::Error> {
         write!(f, "All its good!")
     }
 }
 
 impl Display for DanilaBadMindset {
-    fn fmt(&self, f: &mut Formatter<'_>) -> Result<
-        (), std::fmt::Error
-    > {
+    fn fmt(&self, f: &mut Formatter<'_>) -> Result<(), std::fmt::Error> {
         write!(f, "All its bad...")
     }
 }
