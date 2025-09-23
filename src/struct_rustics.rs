@@ -16,9 +16,18 @@ impl User {
 
 fn build_user(email: String, username: String) -> User {
     User {
+        /*
+        Интересно, что active и sing_in_count нельзя сделать как и с
+        username и email.
+
+        А если сделать username и email как:
+        username: username
+
+        То будет ошибка rust-analyzer про стили.
+        */
         active: true,
-        username: username,
-        email: email,
+        username,
+        email,
         sign_in_count: 1,
     }
 }
