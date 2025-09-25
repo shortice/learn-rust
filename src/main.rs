@@ -7,6 +7,7 @@ mod iter_rustics;
 mod lifetime_rusti;
 mod ok_ne_ok_rusti;
 mod rusti_pointer;
+mod rustihread;
 mod struct_rustics;
 mod template_rusti;
 mod traits_rusti;
@@ -36,4 +37,5 @@ fn main() {
     closures_rusti::test();
     iter_rustics::test();
     rusti_pointer::test();
+    rustihread::test();
 }
